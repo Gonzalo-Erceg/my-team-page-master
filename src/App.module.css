@@ -1,0 +1,121 @@
+.headerContainer{
+    display: grid;
+    grid-template-columns: 439px 439px;
+    justify-content: space-around;
+
+}
+
+.app{
+    position: relative;
+    height:100% ;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    height: 100%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.headerContainer div{
+    justify-self: center;
+   
+    
+}
+.headerContainer div h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "PT Serif";
+}
+
+.headerContainer div span{
+    font-size: 18px;
+    font-family: "Poppins";
+    
+}
+.headerContainer h2{
+    font-size: 18px;
+    font-weight: 600    ;
+    font-family: "Poppins";
+}
+.myTeam{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 450px 450px ;
+    justify-content: center;
+    gap:50px;
+    margin-top: 100px;
+}
+.myTeam div:nth-child(2), .myTeam div:nth-child(5){
+    align-self: end;
+}
+
+.footer{
+   position: relative;
+   text-align: center;
+   bottom: 0;
+    
+    
+}
+.footer span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #A9A9A9;
+
+}
+
+.footer span a{
+    text-decoration: none;
+    color:#A9A9A9
+}
+
+.footer span a:hover{
+    text-decoration: underline;
+    color:#314ef0;
+}
+
+@media (max-width:1070px){
+    .myTeam{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px 450px;
+    }
+    .myTeam div:nth-child(5){
+        align-self: start;
+    }
+    .myTeam div:nth-child(2n){
+        align-self: end;
+    }
+
+}
+
+
+
+@media(max-width:970px){
+    .headerContainer{
+        display: grid;
+        grid-template-columns: 1fr ;
+        
+        justify-content: start;
+
+    
+    }
+    .headerContainer div{
+        justify-self: start;
+        max-width: 439px;
+        
+    }
+    .headerContainer div span{
+        font-size: 14px;
+        
+    }
+    
+}
+@media(max-width:630px){
+    .myTeam{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px;
+    }
+}
+

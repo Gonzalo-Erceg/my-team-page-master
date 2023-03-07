@@ -1,0 +1,29 @@
+.card div{
+   
+    max-width: 238px;
+    min-width: 138px;
+}
+.image{
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    
+}
+
+.name{
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.job{
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+}
+
+
